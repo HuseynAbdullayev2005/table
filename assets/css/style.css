@@ -1,0 +1,231 @@
+.navbar {
+    min-height: 80px;
+    width: calc(100% - 200px);
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #212832;
+}
+
+.navbar_left {
+    margin-left: 10px;
+}
+
+.navbar_right {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.navbar_right_button {
+    display: flex;
+
+    border-radius: 10%;
+    border: 1px solid black;
+}
+
+.buttons {
+    color: grey;
+    padding: 12px 40px;
+}
+
+.navbar_right_button i {
+    padding: 12px 20px;
+    background-color: blue;
+    color: white;
+}
+
+.side_navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    gap: 50px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: #212832;
+    color: rgb(133, 133, 133);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.side_navbar li {}
+
+.side_navbar_core {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.side_navbar_interface {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.side_navbar_addons {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.side_navbar_interface_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side_navbar_addons_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main {
+    padding-left: 200px;
+}
+
+.main_head {
+    padding: 20px;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main_head h1 {
+    font-size: 40px;
+}
+
+.main_head p {
+    font-size: 20px;
+}
+
+.main_middle {
+
+    border: 1px solid grey;
+    margin-left: auto;
+
+}
+
+.main_middle p {
+    padding: 10px;
+}
+
+.main_table {
+
+    border: 1px solid #ced4da;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: auto;
+}
+
+.table_head {
+    border: 1px solid grey;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.table_upper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table_upper_left {
+    display: flex;
+    gap: 20px;
+}
+
+.table_upper_right_buttons_button {
+    padding: 10px 50px;
+}
+
+.select {
+    padding: 10px 20px;
+}
+
+.table {
+
+    border: 1px solid #ced4da;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+
+    border: 1px solid #ced4da;
+    border-radius: 40px;
+    width: 100%;
+   
+}
+
+td,
+th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    border: 1px solid #ced4da;
+
+}
+
+.table_foot {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table_foot_right {
+    border: 1px solid grey;
+    color: blue;
+    display: flex;
+
+}
+
+.table_foot_right p {
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.child {
+    background-color: gray;
+}
+
+.footer {
+    margin: 30px 0px;
+    padding-left: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+    }
+
+    .navbar_right_button {
+        display: none;
+    }
+}
